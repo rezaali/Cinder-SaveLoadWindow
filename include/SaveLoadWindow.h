@@ -24,12 +24,12 @@ SOFTWARE.
 
 #include <functional>
 
-#include "glm/glm.hpp"
 #include "cinder/Filesystem.h"
+#include "glm/glm.hpp"
 
 namespace reza {
 namespace win {
 void saveWindow( const ci::fs::path &path, const glm::ivec2 &origin, const glm::ivec2 &size, bool valid );
-void loadWindow( const ci::fs::path &path, bool closeable = true, const std::function<void(glm::ivec2, glm::ivec2, bool )> &cb = nullptr );
+void loadWindow( const ci::fs::path &path, bool closeable = true, const std::function<void( glm::ivec2, glm::ivec2, bool )> &cb = nullptr );
 } // namespace win
 } // namespace reza
